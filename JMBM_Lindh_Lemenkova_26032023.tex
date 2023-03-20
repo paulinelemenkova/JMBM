@@ -1,0 +1,423 @@
+\documentclass[USenglish,twocolumn]{article}
+
+\usepackage[utf8]{inputenc}%(only for the pdftex engine)
+%\RequirePackage[no-math]{fontspec}%(only for the luatex or the xetex engine)
+\usepackage[big]{dgruyter}
+%\graphicspath{{figures/}} % path to folder with figures
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{lipsum} 
+%\usepackage{blindtext}
+%\usepackage[showframe]{geometry}
+\usepackage{graphicx}
+\usepackage[super]{nth}
+\usepackage{gensymb}
+
+\begin{document}
+ 
+\articletype{Research Article{\hfill}Open Access}
+\author[1]{Per Lindh}
+\author*[2]{Polina Lemenkova}
+  \affil[1]{$^1$ Swedish Transport Administration, Gibraltargatan 7, Malmö, Sweden \\ $^2$ Lund University, Lunds Tekniska Högskola LTH (Faculty of Engineering), Department of Building and Environmental Technology, Division of Building Materials, Box 118, SE- 221-00, Lund, Sweden, E-mail: per.lindh@byggtek.lth.se}
+  \affil[2]{$^3$ Université Libre de Bruxelles (ULB), École polytechnique de Bruxelles (Brussels Faculty of Engineering), Laboratory of Image Synthesis and Analysis (LISA). Campus de Solbosch -- CP 165/57, Av. F. D. Roosevelt 50, B-1050 Brussels, Belgium, E-mail: polina.lemenkova@ulb.be}
+
+  \title{\huge Seismic monitoring of strength in stabilized foundations by P-wave reflection and downhole geophysical logging for drill borehole core}
+  
+ \runningtitle{Seismic monitoring of strength by P-wave reflection and geophysical logging}
+ \runningauthor{P. Lindh, P. Lemenkova}
+
+\begin{abstract}
+{Evaluating the subground properties during the initial stage of a foundation construction is important in order to estimate the suitability of soil quality to the technical requirements of bearing capacity, resistance to stress and strength. This study presented the geotechnical exploration of foundation intended for construction of Max IV facility of Lund University, performed in fieldwork and laboratory. The \emph{in-situ} methods included drilling boreholes, core sampling and assessment, crosshole measurements and borehole logging. The laboratory measurements were performed at Swedish Geotechnical Institute (SGI) and combined seismic measurements of drill cores, determination of the Uniaxial Compressive Strength (UCS) and examination of material property: sieve analysis and natural moisture content. The UCS was evaluated with regard to velocities of elastic P-waves. The synchronous light test by X-ray diffraction was performed for qualitative analysis of mineral composition of samples. We applied integrated approach of diverse geophysical methods to solve practical  tasks on evaluation of foundation strength and geotechnical parameters. This study demonstrated the benefits of integrated seismic and geophysical methods applied to soil exploration in civil engineering for testing quality of foundation materials.}
+\end{abstract}
+  \keywords{seismicity; elastic wave; X-ray diffraction}
+ 
+% seismicity, elastic wave, X-ray diffraction, mineral composition, gamma-ray spectrometry log, borehole, drilling, crosshole, core sampling
+%  \classification[PACS]{}
+ % \communicated{...}
+ % \dedication{...}
+
+  \journalname{Journal of the Mechanical Behavior of Materials}
+
+\DOI{DOI}
+  \startpage{1}
+  \received{Aug 25, 2022}
+  \revised{..}
+  \accepted{..}
+
+  \journalyear{2022}
+  \journalvolume{x}
+  \journalissue{x}
+  
+\maketitle
+
+\section{Introduction}
+
+Geophysical methods offer an effective tool for evaluation of physicochemical and mechanical parameters of soil in civil engineering. Information regarding the lithological structure and mineral content, geochemical and geological properties of soil can be extracted from core drilling and geophysical borehole logs \cite{MAUCEC2009194,JING2021101534}. Geophysical methods of data processing are certainly required, when non-destructive methods are advisable. Parameters of acoustic velocities of seismic waves penetrated through the specimens can be used as dataset for estimation of soil strength in the laboratory using reflectivity of P-waves \cite{Lindh202102,Lindh202210}. Data processing aimed to investigate strength, elasticity and mineral properties of specimens can be performed using acoustic imaging and seismic testing by measuring velocities P- and S-waves \cite{Tang2009,Tronicke,Hadden} as well as X-ray-diffractions for testing mineral content of soil \cite{Wang}. 
+
+Evaluation of strength properties of soil is an essential requirement for construction works for safety and stability of buildings. Prior to constructions, soil should be reinforced using binders, which usually includes such stabilizing agents as cement \cite{Lindh2004,HORPIBULSUK20102011}, lime \cite{OKYAY201034,JAUBERTHIE2010395}, slag \cite{Lindh2021a}, cementitious materials \cite{YOON20102322} in various proportions and content \cite{Lindh2001}. Stabilization may also include environmental goals, such as cleaning the material from chemical \cite{CONTESSI2021141826,Lemenkova202222} and toxic hazardous materials  \cite{Lindh202201}. The stabilization of cured material results in the increased strength, the quality of which can be determined using uniaxial compressive strength (UCS) testing or geophysical data processing, as well as interpretation of borehole logs for estimation of soil parameters \cite{LIU2022107048,Rydenetal2016,COMINA2021106278}. The aim of such applications is the evaluation of soil strength from measured seismic velocities of P-waves of the drill core. 
+
+Structural characteristics and mineral composition of soil can be determined from the interpretation of borehole logging using inverse geophysical methods based on correlation of density and porosity of core with the response from elastic seismic waves. Such evaluation can be performed using an integrated approach of interpretation of crosshole measurements with acoustic testing of core specimens. The borehole logging presents an effective tool for geotechnical exploration for ground measurements inside the boreholes, widely used for soil analysis and reported in a variety of studies \cite{KALERIS2015135,DIAS2020107099,YU2022127817,YU2021126010}. Probe sensors of the borehole logging system measure physical properties of the ground: density, and porosity, magnetic and radioactivity properties, electrical resistivity, seismic velocity, 
+\cite{KILLEEN2015447}. These data are useful for evaluation of soil quality and suitability for foundation construction works.
+
+Advanced method of evaluating soil structure is the X-ray diffraction (XRD), which is effective for analysis of soil structure, microfabrics, orientation of crystals and identification of mineral content \cite{Denaix,Das,Righi}. The XRD applies interference of monochromatic X-rays in a crystalline specimen. Crystalline structure of soil diffracts X-rays and responses to an X-ray diffractometer by a generated interference image. This pattern contains information regarding the molecular structure of soil \cite{ALDERTON2021520}. The benefits of XRD for soil foundation studies is that it is a straightforward and functional method for  qualitative identifying of the structure of soil material, for quantifying the relative proportions of minerals in soil sample  and for detecting soil evolution phases \cite{ADAMS2019391}.
+
+Optical images of the borehole wall of the drilling core in artificial colours are produced by the core scanner devices which allow to record and visualise the wall sections of drilling cores. The acoustic televiewer is an essential feature of the borehole imaging based on the ultrasonic pulse-echo configuration \cite{paillet1990borehole}. Its approach consists in plotting the borehole by ultrasound, which is transmitted from the piezoelectric transducer in the borehole. The waves are reflected on the borehole by the mirror and measured as a log by the receiver, which records amplitudes and the travel time of the signals \cite{RONQUILLOJARILLO20181}. These data can be used as information regarding the fracture strike and dip \cite{Paillet}. The acoustic data recorded by the borehole imaging system are used as indication of the soil properties: character, relation, and orientation of lithologic and structural features \cite{WILLIAMS2004151}. 
+
+New approaches in acoustic borehole imaging are developing, aimed to achieve the optimum performance of the device: improve speed and precision of data processing workflow \cite{schepers1991development,DELTOMBE2004161}, increase quality of imaging \cite{ALSIT2015139}, enhance recognition of echoes and separate noise \cite{WEDGE2017157}, adjust to real-time borehole conditions \cite{Jerram}. In soil and foundation science, digital image analysis and data processing provides important source of information which can be used as to control and improve the interpretation of geologic measurements \cite{Kaellenetal2014,Kallenetal2016,Lemenkov2021c}.
+
+The geologic impulse response from gamma ($\gamma$) rays in various beds of borehole enables to understand the geological nature and geophysical properties in complex sequences of drilled layers \cite{Conaway}. Gamma-ray logging of boreholes and spectrometer system has been reported for determination of mineral compositions in a drill core \cite{Ajayi} and concentrations of metals and radioactive elements ($^{238}U$, $^{133}Ba$, $^{232}Th$, $Mn$) \cite{Loevborg,Mikesell}. For instance, gamma-ray logs enable granulometric estimation of caly content, due to the high porosity and low resistivity of clay, which, together with its mineralogical composition (potassium) causes high gamma-ray emissivity \cite{Bhuyan,DIAZCURIEL2021104481}. The compensated gamma-gamma ($\gamma-\gamma$) type density is a log corrected for the negative effects of gamma rays naturally occurring in  radioactive elements ($^{238}U$, $^{232}Th$), which is used for measuring density of borehole core layers \cite{osti_5961810,osti_5614551}.
+
+The information regarding the geotechnical properties of soil intended to foundation constructions is normally acquired by the inspection of strength (UCS) \cite{LindhWinter,Lemenkov2021b,Lemenkov2021a}. Strength of soil also provides information on the quality of stabilization works. The use of the compression machine for UCS tests is usually applied to detect precise information of soil behaviour in strain-stress conditions. More advanced geophysical methods include non-destructive approaches using evaluation of seismic P-wave velocity for analysis of strength. 
+
+The integration of geophysical and engineering geological methods is important, since it enables to use the benefits of diverse approaches and tools for a complex assessment of foundation properties prior to construction. For instance, results on seismic tests show the correlation between the UCS and P-wave velocities which is useful to control stabilization quality, while borehole logging provides with information regarding the local properties of tested soil intended for a construction of foundation.
+
+In this study we present the results of work aimed at testing and improving the parameters of soil prepared for construction of foundation of the large facility. These include geophysical borehole logging for core analysis, soil stabilization, geophysical tests. The requirements for soil included high strength, low sensitivity to vibrations, high bulk density and low porosity. The plan of this article is as follows. In Section \ref{sec:2} we present the scope of this work and introduce \emph{in-situ} condition of a real project. Section \ref{sec:3} reports fieldwork, presents examples of core sampling and borehole logging. Section \ref{sec:4} defines laboratory tests, including UCS and seismic tests. Section \ref{sec:5} presents the data processing and describes the results. We close with discussion of the results in Section \ref{sec:6}, where we comment on the performance of the methods. Some remarks concerning future works are provided in the last Section \ref{sec:7}.
+
+\newpage
+\section{Background and purpose}\label{sec:2}
+In this paper, we present the results of the works aimed to strengthen the foundation using geophysical methods applied for engineering geology. The drilling of borehole core was performed to select soil samples, stabilized and investigated by downhole geophysical logging and seismic methods. The test area belongs to the synchrotron radiation light laboratory Max IV (\href{https://www.maxiv.lu.se/}{www.maxiv.lu.se/}), coordinated by Lund University, Fig. \ref{Fig:01}. This facility which has a unique foundation consisting of $160,000 m^3$ of clay moraine which required to be stabilized and tested for strength. In 2010, the first sod was broken for Max IV at Brunnshög in Lund. 
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.45\textwidth]{Fig_01.jpg}\\
+  \caption{Fieldwork measurements at Max IV. Photo: Per Lindh.}\label{Fig:01}
+\end{figure}
+
+The facility includes independent experimental stations, which opertates with a wide range of experimental techniques, including crystallography, electron spectroscopy, nanolithography and photo-nuclear experiments. One of the prerequisites for achieving the stable performance of the foundation of Max IV is to reduce the effects from vibrations on soil. Therefore, the work consisted of reducing the plant's sensitivity of foundation to vibrations by increasing its rigidity, so that the components in accelerators and experimental stations could move in time. The foundation also has a certain reducing effect on vibrations from the internal and external sources. The required condition for vibration level is to be below 20-30 nm RMS displacement for frequency >5Hz. 
+
+An essential parameter for the performance of Max IV facility is related to the vibration characteristics. To evaluate the quality of foundation that should meet the technical requirements regarding the vibration, a series of simulations were carried out using geophysical methods. The purpose of the project is to study the quality of the foundation prepared for construction works and to compare it with the results from the production testing. Investigation of the properties of the entire stabilized layer enables to evaluate how well the selected production model succeeded in creating a homogeneous monolith of the stabilized soil material using core drilling, Fig. \ref{Fig:02}. 
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.45\textwidth]{Fig_02.jpg}\\
+  \caption{Core drilling. Photo: Per Lindh.}\label{Fig:02}
+\end{figure}
+
+The research included the following objective: 
+
+\begin{itemize}
+	\item to achieve the homogeneity of a foundation monolith 
+	\item to evaluate the strength in the bonds in boundaries between the different layers of soil
+	\item to estimate the difference in density between the surface and deep-lying material through additional compaction provided by the overlying clay
+	\item to test changes in material properties compared to the production samples. 
+	\item to investigate the binding products on the stabilized material using \emph{in-situ} measurements in Max IV.
+	\item to analyse the differences between the seismic results from the cross hole and seismic tests on the drill cores.
+\end{itemize}
+
+As a result of the performed works, the bearing capacity of soil was improved which was proved by a series of tests, as presented and described below in relevant sections.
+
+%\newpage
+\section{Fieldwork measurements}\label{sec:3}
+The measurements were performed in connection with the foundation works aimed to improve the quality of soil through stabilization and to evaluate the results through seismic tests. 
+
+\subsection{Core sampling}
+The field tests started with three core samples being drilled as a cylindrical sections through the stabilized layer of soil down to the underlying naturally deposited clay moraine. The drilling was performed using the S Geobor, a wireline triple tube core barrel drilling system developed by Terracore, \cite{Epiroc}. The hole bit diameter is 146 mm; the core inner diameter is 102 mm. Fig. \ref{Fig:02}. The drilling was carried out to a depth of 5 m, i.e., an under-drilling was of ca. 1 m below the stabilized layer. No core losses were reported in any of the three core drill holes, see Appendix. Examples of the drill cores are shown in Fig. \ref{Fig:03} and Fig. \ref{Fig:04}.
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.45\textwidth]{Fig_03.jpg}\\
+  \caption{Drill core from borehole no. 2, depth: between 4--5 m. The right part of the drill core consists of natural clay moraine, which is more plastic than the stabilized clay moraine. Photo Per Lindh.}\label{Fig:03}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.45\textwidth]{Fig_04.jpg}\\
+  \caption{Drill core from borehole no. 2, depth: between 1--2.5 m. The drill core shows homogeneous stabilization along the entire stretch. Photo: Per Lindh.}\label{Fig:04}
+\end{figure}
+
+\subsection{Stabilization}
+Stabilization of foundation is a method that works best for improving soil resistance towards the internal and external sources of vibration. Natural soil was stabilized beneath the two storage rings with hydrated lime and ground granulated blast furnace slag (GGBFS) down to a depth of 4 m. The stabilization was carried out in layers of 3 m with an undercut in the underlying layer between 3- 5 cm to ensure a homogeneous matrix without cracks and joints. The continuous quality control was performed of each stabilized soil layer. 
+
+\subsection{Crosshole measurements}
+The tests on crosshole measurements were based on the three core samples collected from the ground surface down to the bottom of the stabilized layer (to 3.15 m). The specimens of drill cores were mapped and photographed, after which selected samples were measured for P-wave velocity, compressive strength, density and deformation. Moreover, the specimens were tested at the diffraction beam tube BLI 711 at MAX-lab, Öle Römers väg, Lund. The crosshole measurements were performed with a new type of equipment with extended possibilities to measure shear wave and compression wave velocity in the material between the boreholes. The system consists of a transmitter unit that generates shear or compression waves using two receiver units (geophones), Fig. \ref{Fig:05}. 
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.45\textwidth]{Fig_05.jpg}\\
+  \caption{Schematic sketch of crosshole measurements on Max IV.}\label{Fig:05}
+\end{figure}
+
+The tests were performed in accordance with ASTM D4428/D4428M-14, \cite{ASTM2016}. The crosshole measurements show the achieved requirements for soil quality in terms of velocities of horizontally travelling seismic waves in soil: primary compression wave (P-wave) and secondary shear wave (S-wave). The design criterion was a minimum shear wave speed ($W_s$) of 900 m/s. Fig. \ref{Fig:06} shows a $W_s$ between 1000--1350 m/s (\nth{3} curve from the left, red). The coefficient of lateral expansion is shown in the Poisson's ratio (\nth{5} curve left, red), with the lowest values (0.14) on the horizon at 1.20 m.
+
+\begin{figure*}
+ \centering
+    \includegraphics[width=0.95\textwidth]{Fig_06.jpg}
+  \caption{Results from the crosshole measurements.}\label{Fig:06}
+\end{figure*}
+
+%\newpage
+\subsection{Borehole logging}
+Geophysical borehole logging has been performed using technical tools of Ramboll Group AS for detailed and precise analysis of the variations in physical parameters of core and presented in Fig. \ref{Fig:08}, Fig. \ref{Fig:09} and Fig. \ref{Fig:10}. As stabilized soil was considered sufficiently strong, no reinforcement of the borehole walls was carried out except by a thin layer filled on top of the stabilized layer, Fig. \ref{Fig:07}. 
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.45\textwidth]{Fig_07.jpg}\\
+  \caption{Crosshole measurements on Max IV. The seismic source was located in the borehole No. 1 on the far right of the image. Plastic pipes go down to the stabilized layer. Photo: Per Lindh.}\label{Fig:07}
+\end{figure}
+
+The logging has been carried out in the core boreholes with aim to derive lithological, structural and rock mechanical information using geophysical methods. Geophysical borehole logs in Fig. \ref{Fig:08}, Fig. \ref{Fig:09} and Fig. \ref{Fig:10} also show the data for lithology analysis by a combined evaluation of the log responses and acoustic measurements. 
+
+The borehole logging system collected information on core using probes with embedded sensors. Captured data were transmitted to the computer using a logging cable. The system included a GPS and a depth encoder for 3D coordinate capture. The results of the data processing include the borehole logging which shows plots of sensor outputs visualised in a horizontal coordinate system versus depth on the vertical axis, Fig. \ref{Fig:08}, Fig. \ref{Fig:09} and Fig. \ref{Fig:10}.
+
+Using borehole logging has benefits for soil testing: 
+\begin{enumerate}
+	\item First, the reflected impulse of waves is directly related to the elastic and material properties of soil. This provides data on soil structure which can be received both using direct measurements and indirect evaluation. The latter includes solving inverse problems to estimate hidden parameters of soil from its related properties (e.g., porosity-density links). 
+	\item Second, the acoustic testing device of borehole logging is highly sensitive to the microstructure of ground. Thus, the recording of logging can be used for recognition of defects, detection of fractures and cracks in layers prepared for foundation construction.
+\end{enumerate}
+
+The information is confined to a limited distance of 4.95 m tested around the boreholes drilled for Max IV. The structural analysis of core derived from borehole logging comprised data on several following parameters illustrated as vertical cross sections: 
+
+\begin{enumerate}
+	\item depth from ground level, 
+	\item natural $\gamma$ rays, 
+	\item inclination from the vertical level, 
+	\item caliper probe 1-arm
+	\item compensated $\gamma-\gamma$ density
+	\item porosity calculated from density
+	\item filtered radius image from the borehole wall (360\degree)
+	\item 3D caliper with borehole acoustical image
+	\item amplitude (360\degree) of acoustical image of borehole wall
+	\item hardness computed from the acoustical median of the borehole wall
+\end{enumerate}
+
+The inclination shows the angle of vertical inclination formed between the geodetic point of measurement (located device) and the exact coordinate location of core. The inclination phenomena is owing to the physics of the Earths magnetic lines that are not parallel to the surface, which results in a slightly titled position of the compass with inclined of the needle. This information is plotted on the graphs in azimuth \degree. The caliper probe 1-arm is a mechanical device, used to measure the internal diameter of a borehole and to press a section of a probe against the side of the borehole for density logging.
+	
+The results of the analysis and characterisation of soil structures are shown in Fig. \ref{Fig:08}, Fig. \ref{Fig:09} and Fig. \ref{Fig:10}, which give information regarding natural gamma, calliper, acoustic televiewers, density and porosity, which have been defined by a combined interpretation of core images and acoustic images of borehole. From the acoustic measurements, the hardness of the borehole wall was calculated. The results from boreholes 2 and 3 show a variation at the depth of 2.5 m, while for borehole 2 it is also noted at 3.3 m. This variation in caliper results is also seen as a change in the hardness of the borehole wall. 
+
+During the examination of the drill cores, a thin layer (ca. 10 mm) of not stabilized soil was detected. This well corresponds with the 2.5 m level. The most likely reason for such variation is that the milling down in the underlying layer was too small and therefore this layer has a lower strength. This difference in strength is not visible in all the three boreholes and hence probably has a small extent. The difference in strength does not affect the function of the foundation at the frequencies where the construction is sensitive to vibrations since these wavelengths are much longer (bigger) than this layer.
+
+\begin{figure*}
+ \centering
+    \includegraphics[width=0.95\textwidth]{Fig_08.jpg}
+  \caption{Results from the borehole logging for borehole no. 1.}\label{Fig:08}
+\end{figure*}
+
+\begin{figure*}
+ \centering
+    \includegraphics[width=0.95\textwidth]{Fig_09.jpg}
+  \caption{Results from the borehole logging for borehole no. 2.}\label{Fig:09}
+\end{figure*}
+
+\begin{figure*}
+ \centering
+    \includegraphics[width=0.95\textwidth]{Fig_10.jpg}
+  \caption{Results from the borehole logging for borehole no. 3.}\label{Fig:10}
+\end{figure*}
+
+\newpage
+\section{Laboratory tests}\label{sec:4}
+Laboratory investigations were performed in the Swedish Geotechnical Institute (SGI) and included (i) soil analysis (grain distribution and natural water content), (ii) seismic measurements and (iii) UCS strength tests of drill cores. These investigations were based on the three core samples that were carried out from the ground surface down to the bottom of the stabilized layer. The drill cores were mapped and photographed, after which samples were selected for determination of P-wave velocity, compressive strength and density. Furthermore, material samples were tested at the diffraction beam tube BLI 711 at MAX-lab, Öle Römers väg, Lund.
+
+\subsection{Sieve analysis and moisture content}
+The deformation performance of soil as a response to stress is a complex and non-linear parameter, controlled by many factors. Mineralogy plays the essential role in strength and stress-strain behaviour of soil. It includes the porosity and ratio of voids that correlate with soil stiffness; plasticity and rheology that affect the mechanical properties of soil; structure and fabric related to the interparticle contact in soil. Since inner properties of soil influence its response to stress, analysis of soil structure is a fundamental part of foundation works.
+
+The sieve analysis test was performed to measure the ratio of each size of grain that is contained within the tested soil specimens. The produced plots of the grain distribution curve (Fig. \ref{Fig:12}) were used to analyse the type of soil, which was detected to be moraine clays. Natural moisture content was tested in order to obtain information regarding soil properties (Fig. \ref{Fig:13}), to select a proper binder for stabilization and fine an optimal a recipe to handle the variations in clay content. 
+
+\subsection{Seismic measurements of drill cores}
+Evaluating the correlations between the seismic response of the elastic waves and strength properties of the stabilized soil is a key approach in non-destructive measurements in civil engineering. Given soil specimens are of identical type, the task is to identify the level of resonant frequency in the ultrasonic waves, such that the values of P-wave velocity correspond to the level of strength on each measured sample. Since soil is used as a basis for foundations of building, this sets up the prerequisites to achieve a high performance of ground: stability, strength and reduced effects from the vibrations. 
+
+Seismic measurements were performed as a free-free resonant column measurement of the P-wave velocity. In this test, a cylindrical sample was placed atop of a soft foam layer to simulate free boundary environment. The vibrations of P-waves were generated by a small hammer on one end of the tested specimen and measured velocities by the accelerometer which was attached to its another end. The fundamental frequency of seismic waves was measured with a ceramic shear ICP® accelerometer. The vibrational response of the sample correlates with the inner properties of its structure and enables to estimate strength and small-strain moduli.
+
+Measurements of the flex mode in tested specimens were also carried out. The flex mode is more affected by the boundary conditions of the specimens. It gives a higher determination of the shear wave velocity in soil sample. Comparing longitudinal resonant frequency (P-waves) and bending resonant frequency (S-waves) was performed for a quality control regarding the requirements for soil resistance to cracks and inhomogeneities in a specimen. For tested specimens, the relationship between P and S waves was shown in Fig. \ref{Fig:15}.
+
+%\newpage
+\subsection{Compressive strength of drill cores}
+The UCS was tested according to a deformation controlled test using a constant rate of deformation. 
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.40\textwidth]{Fig_11.jpg}\\
+  \caption{The mechanical press MTS used for UCS test of specimen from the Bore 3:3, depth: 2.95--3.15 m. The axial resonant frequency -- 4516 Hz; flex mode resonant frequency -- 2902 Hz. Photo: Per Lindh.}\label{Fig:11}
+\end{figure}
+
+The deformation rate was set to 2 mm/min, as tested specimens had a diameter of ca. 100 mm and a height of ca. 200 mm. Fig. \ref{Fig:11} shows a photo of the mechanical press MTS used for testing UCS. The samples were pressed in a 500 kN. The 1\% per minute was in the axial direction. 
+
+%\newpage
+\section{Results}\label{sec:5}
+
+\subsection{Grain distribution curve and wN}
+
+Sieve analysis shown grain distribution of the natural clay moraine which varied according to Fig \ref{Fig:12}.
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.45\textwidth]{Fig_12.jpg}\\
+  \caption{Grain distribution of soil performed to select binders for stabilization aimed to strengthen the foundation on Max IV}\label{Fig:12}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.45\textwidth]{Fig_13.jpg}\\
+  \caption{Natural water ratio (wN) of tested samples.}\label{Fig:13}
+\end{figure}
+
+The clay content varied between 22 to 45\% of the total soil weight. Therefore, the binder recipe for stabilization was selected according to this type of soil and consisted of 50\% quicklime (CaO) and 50\% of GGBFS. This recipe of binders proved to be robust enough to handle the variations in grain distribution and effectively stabilize soil. The natural water ratio (wN) of soil specimens varied between 11 to 23\% with an average value of ca. 18\%, Fig. \ref{Fig:13}. The experiments the water ratio variations was performed to add extra water and evaluate the compactness of soil using the Moisture Condition Value (MCV) testing.
+
+\subsection{Seismic P-wave velocity against UCS}
+
+Eight samples were tested for the analysis of UCS and measurement of P- and S-wave velocity. The requirement for test specimens was a P-wave velocity of at least 1430 m/s, which was achieved during the experiment. Thus, Fig. \ref{Fig_14} shows P-wave velocity of the specimens stored at 20°C which achieved the required value already after 500 hours of curing.
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.40\textwidth]{Fig_14.jpg}\\
+  \caption{P-wave (compression) velocity against curing time for laboratory tested samples stored at 20°C.}\label{Fig:14}
+\end{figure}
+
+The results of the \emph{in situ} measurements demonstrate a correlation between the P- and S-values, see Fig. \ref{Fig:15}. 
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.40\textwidth]{Fig_15.jpg}\\
+  \caption{P-wave versus S-wave velocity for drill cores}\label{Fig:15}
+\end{figure}
+
+The majority of the tested specimens were selected from a depth of 2 to 4 m. The reason for this was that the specimens should have a slenderness factor of 2, i.e., the ratio between the length and diameter must be 2. This value was defined for a better comparison between the values of seismic wave speed and gain in UCS. Since the top two meters of the cores were more cracked, the crack-free length was not 200 mm. The maximum compressive strength amounted to 2430 kPa at a deformation of about 1.75\%, as demonstrated in Fig \ref{Fig:16}. 
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.40\textwidth]{Fig_16.jpg}\\
+  \caption{UCS vs deformation; sample bore 3:3, depth:2.95--3.15m.}\label{Fig:16}
+\end{figure}
+
+The second reasons was to perform a correlation between the P-wave velocity and uniaxial compressive strength (UCS). The compressive strength of the samples varied between 1800 to 4400 kPa, see Fig. \ref{Fig:17}.
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.40\textwidth]{Fig_17.jpg}\\
+  \caption{P-wave (compressiont) velocity as a function of UCS}\label{Fig:17}
+\end{figure}
+
+Fig. \ref{Fig:17} shows a good correlation between compressive strength and P-wave velocity (over 80\%), that is, the model explains 80\% of the variation in the data set. The results show that the compressive strength of the drill cores only slightly increase with depth, so the higher ambient pressure does not affect much the hardening process, see Fig. \ref{Fig:18}. Thus, the data from the drill cores showed only a weak tendency of increase of compressive strength over depth. This tendency might be very weak because it is only based on a sampling above the level of 2 m below the ground surface where samples did not show any correlation between depth and strength, Fig. \ref{Fig:18}.
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.40\textwidth]{Fig_18.jpg}\\
+  \caption{Compressive strength as a function of depth}\label{Fig:18}
+\end{figure}
+
+A compilation of density data between different depths did not show any differences in density and depth. The variation in density was within $100 kg/m^3$, Fig. \ref{Fig:19}.
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.40\textwidth]{Fig_19.jpg}\\
+  \caption{Density as a function of depth}\label{Fig:19}
+\end{figure}
+
+In this test, we evaluated the moraine clay specimens of core collected from the three different sites of ground surface down to the bottom of the stabilized layer (to 3.15 m). Specimens were tested to assess the correlations between the UCS with the relevant experiments of P-wave velocity using free-free resonant method. The data was evaluated statistically, visualized and plotted to interpret the degree of correlation and the variability of UCS and velocity of seismic P-waves.
+
+\newpage
+\subsection{X-ray diffraction (XRD) test}
+The analytical method based on X-Ray diffraction (XRD) test was performed to quantify the mineralogical composition of specimens. Theoretically, the mineral content in crystalline samples can be determined using X-ray diffraction both qualitatively \cite{NABIH2020109384,WANG2021105354,MURER2021m0800747,PARANTHAMAN2021107992} and quantitatively \cite{BUTLER2021104662,WANG2022,BUTLER2020114474}. In case of quantitative case, the XRD is applied on reference minerals which are known to be commonly present in a given type of soil \cite{NOWAK2018133}. In our case, none of the minerals has had a known, fixed proportion which could be a function of the internal standard. The synchronous light test was performed for qualitative analysis of the mineral soil composition, Fig. \ref{Fig:20} and Fig. \ref{Fig:21}. 
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.50\textwidth]{Fig_20.jpg}\\
+  \caption{Dried sample A: black curve -- experimental data; blue curve -- calcite (calculated); red curve -- quartz (calculated)}\label{Fig:20}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.50\textwidth]{Fig_21.jpg}\\
+  \caption{Native sample B: black curve -- experimental data; blue -- calcite (calculated); red -- quartz (calculated)}\label{Fig:21}
+\end{figure}
+
+Sampling and analysis were performed both for natural and dried samples, Fig. \ref{Fig:22} and Fig. \ref{Fig:23}. 
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.50\textwidth]{Fig_22.jpg}\\
+  \caption{Dried sample A. Minerals: chlorite (C), ettringite (E), feldspar (F), gypsum (G), illite (I), kaolinite (K), metavivianite (M), smectite (S), zeolite stilbite (Z)}\label{Fig:22}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.50\textwidth]{Fig_23.jpg}\\
+  \caption{Native sample B. Minerals: amphibole (A), chlorite (C), feldspar (F), gypsum (G), illite (I), kaolinite (K), metavivianite (M)}\label{Fig:23}
+\end{figure}
+
+he measurements were carried out at the diffraction beam tube BLI 711 at MAX-lab, Öle Römers väg, Lund. The samples were measured at high resolution of 0.997Å wavelength from $4-40\degree 2 \theta$ angle. The measurements enabled to analysis the qualitative composition of soil. The most important minerals in the samples were identified via the search/match method. Using this method, yhe following minerals have been identified: chlorite (C), ettringite (E), feldspar (F), gypsum (G), illite (I), kaolinite (K), metavivianite (M), smectite (S), zeolite stilbite (Z), amphibole (A). The evaluation of the contain of the samples was based on the qualitative X-ray analysis, i.e., without correct ratios. From the drill cores, samples were taken as one from a superficial layer and one from a deep layer. In total, four samples were examined. T
+
+The purpose of the X-ray diffraction analysis was to identify possible differences in material composition of soil specimens collected in different boreholes. The samples were tested both for those with natural water content and for the oven-dried material. We did not identity any pozzolanic reaction materials in the tested materials. This is probably due to the too small levels in relation to the high levels of clay minerals. Moreover, we note that there were no differences between the top and bottom layers which could be seen in the tested soil, see Appendix. This proves that soil was homogeneous over the tested area.
+
+\section{Discussion}\label{sec:6}
+
+Analysis of seismic velocities of P-wave and S-waves and their reflectivity measured in boreholes are essential methods for the evaluation of soil strength prior to construction of foundation. Besides, as demonstrated in this paper, the determination of deformation and compressive strength is possible using estimated elastic wave velocities. Our study shown the advantages of the integrated use of engineering geological techniques of borehole core sampling and geophysical seismic methods of data post-processing for geotechnical studies in industrial engineering. Measuring uniaxial compressive strength and stiffness of compacted soil is necessary to ensure that it meets the requirements of high bearing capacity and acceptable stiffness to the acting loads.
+
+The results show an advanced and well-functioning approach combining geophysical methods of drilling, borehole drilling, acoustic measurements, seismic tests by P- and S-waves, soil analysis and stabilization. The presented results meets the design requirements regarding soil quality intended for foundation construction. Stabilization by GGBFS and CaCO has proven to be well suited for an  foundation in a fine-grained homogeneous soil. The stabilization enabled to significantly reduce the concrete slab in the construction polygon with the same or better performance. In connection with the foundation works, a continuous quality control of each stabilized layer was carried out to monitor the quality of soil. 
+
+Seismic measurements were carried out both on the compacted specimens collected in the field and on the surface in laboratory conditions. The resonance frequencies of the P-waves of the specimens were measured before the UCS tests, which demonstrated the increase in velocity with curing time for the laboratory tested specimens. Since the selected adhesive has a slow-setting nature, only the initial curing phase was measured \emph{in situ}. Afterwards, the curing process of soil specimens was performed on the laboratory-treated specimens that were stored in the workplace of the SGI. The tested soil specimens were not stored with a successively increased ambient pressure, which differed from the real design and \emph{in situ} conditions. 
+
+Since stabilized soil hardens differently depending on the stress level, this process could not be controlled in these measurements. The measurements made \emph{in situ} showed a much slower curing process. It can be partly explained by the difference in temperature  between the laboratory and in field. However, the differences in the overlay pressure might also add their impact, which could contribute to the strength development for the specimens collected in field. The results from the core sampling and cross hole measurements shown consistent results. The stabilized foundation well meets the set up requirements for a minimum shear wave speed of at least 900 m/s. Moreover, the study shown that the performed series of works on soil analysis, treatment and improvement produced a homogeneous monolith without any major deviations in material properties, which was accepted for foundation constructions. 
+
+The integrated method of geological borehole drilling, geophysical measurements and acoustic tests using seismic waves has proven to perform well with regard to the soil treatment technology, construction industry, material technology and economics. No significant differences between the superficial and deep-lying samples could be seen in the investigated matrix, despite natural small variations in the basic material specimens. The demonstrated results from the performed works on this project show great possibilities to stabilize a fine-grained soil (clay moraine) for a  foundation with high requirements regarding the sensitivity towards vibration, as well as high demands for strength and stiffness.
+
+%\newpage
+\section{Conclusion}\label{sec:7}
+
+In this paper, we have demonstrated the geotechnical exploration of soil with examples of application of geophysical methods. Using seismic testing is an important issue as it focuses on more advanced, non-destructive and robust evaluation of strength parameter sof soil compared to the UCS traditional methods. Complicated properties of fine-grained moraine soil collected in real in-situ conditions requires that precise approaches are used for analysis of suitability of soil for foundation with highly demanding requirements regarding resistivity towards vibrations, density and stiffness.
+
+To ensure a good performance of foundation planned to be constructed on the given soil, we have applied advanced geophysical methods which included drilling, core sampling and assessment, crosshole measurements and borehole logging for testing soil. These data were then processed in the laboratory of SGI. The latter included seismic tests of drill cores, UCS and examination of material property of soil through sieve analysis for grain distribution and natural moisture content.
+
+A notable difference between our proposed method of soil testing with significant usage of geotechnical tools and most existing soil evaluation traditional approaches is that it is build upon integrated scheme of methodology which incorporates fundamental geophysical methods of acoustic tests to solve engineering tasks on empirical evaluation of soil strength for testing geotechnical parameters of foundation for the Max IV facility of Lund University.
+
+Thus, we combined the geological, geophysical and geotechnical approaches methods that use different approaches to the target research object, i.e. soil, yet overlap in background principles of data measurements and processing. These methods were linked in a connected workflow that facilitated complex soil investigation in the project area. For the detailed analysis of soil properties we appleid the synchronous light test by the XRD, which enabled qualitative analysis of mineral composition of soil.
+
+Specifically, we first mined the specimens using drilling of core samples as cylindrical specimens and processed data. We estimated properties of soil samples through the analysis of borehole logging and detected certain differences in the crosshole measurements which were based on the three core samples. Then we tested soil samples using traditional approach of grain distribution analysis and water content. Afterwards, we targeted on the improvement of soil parameters through stabilization, which was performed using binders adjusted to the specific properties of soil: GGBFS and CaO. 
+
+The results of the stabilization have been assessed using seismic velocities of the elastic waves using free-free resonance method and reported the results as a series for plots illustrating the correlation between gain in soil strength and wave speed. Then we integrated the P-wave and S-wave velocity data for drill cores for optimisation of the strength analysis. A sophisticated method of X-Ray diffraction (XRD) based on the analytical tests was performed to quantify the mineralogical composition of specimens. The soil analysis was exerted to alleviate the selection of binders and remove possible negative impact of the irrelevant binders and thus to optimise the workflow process of soil stabilization.
+
+Meanwhile, method of XRD was adopted for mineral analysis of specimens based on the heterogeneous crystalline structure of soil. Then we integrated the UCS and seismic tests, which present the two approaches, the traditional evaluation of soil and the non-destructive precise measurements, for cross-correlation of the UCS and elastic wave speed. Afterwards, the evaluation of the results has been performed using digital data processing, computing, visualization and plotting for decision making regarding the soil suitability for foundation construction for Max IV facility of Lund University. 
+
+We demonstrated that evaluating the soil properties during the initial step of a foundation construction cycle is essential for estimation of the soil quality to the technical requirements, and evaluation of whether the proposed foundation meets the technical requirements of stability and safety in terms of bearing capacity and stiffness of soil. The extensive experimental tests using in-situ data collected from the boreholes were conducted with promising results of application of the proposed workflow for similar projects designed for facilities with advanced requirements for soil foundations. 
+
+Future applications of the presented study can adopt presented methods of geotechnical exploration of the foundation intended for construction of complex facilities. Similar works may also consider the described methods which were performed in fieldwork and laboratory. It is recommended to evaluate the results of the UCS using velocities of elastic P-waves, since these methods demonstrated to be effective and robust for control quality of strength of the stabilized soil. The integrated approach demonstrated in this study can be applied in further works using the benefits of the integrated seismic and geophysical methods in soil exploration studies. Specifically, such methods shown to be useful in civil engineering for testing quality of foundation materials.
+
+The presented results validate the following conclusions: 1) it is beneficial to apply geophysical methodology and tools for civil engineering works due to the demonstrated robustness and precision of data processing cycle: data capture, data analysis, data evaluation, data visualization and plotting, data interpretation and decision making. 2) the capability of data interpretation based on the analysis of the multi-format and heterogeneous data received from geophysical and geological exploration sources is realistic and advantageous for civil engineering and real geotechnical projects.
+
+\vspace{10pt}
+
+\noindent
+\textbf{Author contributions}: All authors have accepted responsibility for the entire content of this manuscript and approved its submission.
+
+\vspace{10pt}
+
+\noindent
+\textbf{Conflict of interest}: The authors state no conflict of interest.
+
+\begin{acknowledgement}
+We thank the anonymous reviewers for their valuable comments. The Division of Building Materials of Lund University provided the concrete cutter for sawing samples. The authors thank Ola Malmgren (Peab Anläggning AB) for project management and coordination, Brian Norsk Jensen, Dörthe Haase (Max IV Laboratory) for assistance with tests, Staffan Hansen (Polymer Technology, LTH) and Nils Rydén (Peab Grundteknik/LTH) for assistance with data interpretation. Roger Wisén (Ramböll), for assistance with interpretation of geophysical logging, Per-Olof Rosenkvist (LTH) for assistance with UCS tests. We also thank the reference group consisting of: Richard Nilsson (Skanska Sweden AB), Roger Wisén (Ramböll), Brian Norsk (Jensen MAX IV Laboratory), Johan Blumfalk (Hercules Foundation). The project was financially supported by the Development Fund of the Swedish Construction Industry (Svenska Byggbranschens Utvecklingsfond, SBUF) as project 13152, the Nordic Community Builder Peab, Swedish Geotechnical Institute (SGI) and Max IV Laboratory of Lund University, Sweden. 
+\end{acknowledgement}
+
+%\newpage
+%\bibliographystyle{IEEEtran}
+\addcontentsline{toc}{section}{References}
+\bibliographystyle{plain}
+\bibliography{References_JMBM.bib}
+%\nocite*{}
+
+%\newpage
+%\appendix
+%\label{App1}
+%\newpage
+
+\addcontentsline{toc}{section}{Appendix}
+\section*{Appendix}
+
+\begin{figure*}
+ \centering
+    \includegraphics[width=0.90\textwidth]{Fig_24.jpg}
+  \caption{Results from the borehole logging for borehole no. 1.}\label{Fig:24}
+\end{figure*}
+
+\begin{figure*}
+ \centering
+    \includegraphics[width=0.9\textwidth]{Fig_25.jpg}
+  \caption{Results from the borehole logging for borehole no. 2.}\label{Fig:25}
+\end{figure*}
+
+\begin{figure*}
+ \centering
+    \includegraphics[width=0.9\textwidth]{Fig_26.jpg}
+  \caption{Results from the borehole logging for borehole no. 3.}\label{Fig:26}
+\end{figure*}
+
+\end{document}
